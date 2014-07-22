@@ -4450,6 +4450,8 @@ footer {
   color: #bac1c8;
   font-size: 15px;
   padding: 0;
+  margin-top: 20px;
+  height: 70px;
 }
 footer a {
   color: #9aa4af;
