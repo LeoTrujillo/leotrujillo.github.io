@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>Leonardo Trujillo</title>
+</head>
+<body>
+  <header class="encabezado">
+    <button class="Header-button is-active fa fa-bars " id="showMenu"></button>
+    <button class="Header-button fa fa-arrow-left" id="hideMenu"></button>
+    <nav class="MainMenu" id="menu">
+      <ul class="MainMenu-list">
+        <li class="MainMenu-item">
+          <a href="#" class="MainMenu-link">
+            <i class="fa fa-user"></i>
+            Yo
+          </a>
+        </li>
+        <li class="MainMenu-item">
+          <a href="#" class="MainMenu-link">
+          <i class="fa fa-child"></i>
+            Perfil
+          </a>
+        </li>
+        <li class="MainMenu-item">
+          <a href="#" class="MainMenu-link">
+          <i class="fa fa-file-code-o"></i>
+            Trabajo
+          </a>
+        </li>
+        <li class="MainMenu-item">
+          <a href="#" class="MainMenu-link">
+            <i class="fa fa-list-alt"></i>
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <figure class="Header-imageContainer">
+     <img src="images/avatar.jpg" alt="Leonardo Trujillo" class="Header-image" width="200">
+    </figure>
+    <figcaption class="Header-imageDescription">
+      <a class="Header-link" href="#" target="_black">Leonardo Trujillo</a>
+    </figcaption>
+    <p class="redes">
+      <a href="#" class="ff">
+        <i class="fa fa-facebook"></i>
+        <span id="txt-f" class="txt">
+          Facebook
+        </span>
+      </a>
+      <a href="#" class="ft">
+        <i class="fa fa-twitter"></i>
+        <span id="txt-t" class="txt">
+          Twitter
+        </span>
+      </a>
+      <a href="#" class="fg">
+        <i class="fa fa-google-plus"></i>
+        <span id="txt-g" class="txt">
+          Google +
+        </span>
+      </a>
+      <a href="#" class="fgt">
+        <i class="fa fa-github-alt"></i>
+        <span id="txt-gt" class="txt">
+          Github
+        </span>
+      </a>
+    </p>
+  </header>
+  <section class="Profile">
+    <div class="u-containerDefault">
+      <h2>
+        Mi perfil
+      </h2>
+      <p class="Profile-description">
+        ¡Hola!, soy Leo
+        Co-founder y frontend de Ideátics, Soy ingeníero pero mi verdadera pasión es el desarrollo, mis herramientas son, Html5, Css3, Jquery, AngularJS, Backbone, entre otros, también me gusta hacer trabajos como freelance y me especializo en la interfaz del usuario y en la interactividad que éste pueda tener en el sitio.
+      </p>
+    </div>
+    <figure class="Header-imageContainer">
+      <img class="img-responsive" src="images/workstation.gif" alt="workstation" width="600">
+    </figure>
+  </section>
+  <section id="trabajo" class="work">
+    <div class="u-containerDefault">
+      <h2 class="u-title">Mi trabajo</h2>
+    </div>
+    <div class="work-container u-container-default">
+      <article class="work-item">
+        <figure class="work-imageContainer">
+          <img src="images/cpa.jpg" alt="" class="work-image">
+          <figcaption class="work-description">Website de CPA del Golfo</figcaption>
+        </figure>
+      </article>
+      <article class="work-item">
+        <figure class="work-imageContainer">
+          <img src="images/ideatics.jpg" alt="" class="work-image">
+          <figcaption class="work-description">Website ideatics</figcaption>
+        </figure>
+      </article>
+      <article class="work-item">
+        <figure class="work-imageContainer">
+          <img src="images/cpa.jpg" alt="" class="work-image">
+          <figcaption class="work-description">Website de CPA del Golfo</figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/hammer.min.js"></script>
+  <script>
+  $(document).ready(function (){
+    $("#txt-f").hide();
+    $("#txt-t").hide();
+    $("#txt-g").hide();
+    $("#txt-gt").hide();
+    $(".ff").hover(function() {
+        $("#txt-f").show('fast');
+    }, function() {
+      $("#txt-f").hide('fast');
+    });
+    $(".ft").hover(function() {
+        $("#txt-t").show('fast');
+    }, function() {
+      $("#txt-t").hide('fast');
+    });
+    $(".fg").hover(function() {
+        $("#txt-g").show('fast');
+    }, function() {
+      $("#txt-g").hide('fast');
+    });
+    $(".fgt").hover(function() {
+        $("#txt-gt").show('fast');
+    }, function() {
+      $("#txt-gt").hide('fast');
+    });
+  });
+  $(function(){
+    if (window.matchMedia("(max-width:768px)").matches){
+      var $buttonShowMenu = document.getElementById('showMenu');
+      var $buttonHideMenu = document.getElementById('hideMenu');
+      var $menu = document.getElementById('menu');
+
+      var $body = document.querySelector('body');
+
+      var body = new Hammer($body);
+
+      var showMenu = function(){
+                    $buttonShowMenu.classList.remove('is-active');
+                    $buttonHideMenu.classList.add('is-active');
+                    $menu.classList.add('is-active');
+                };
+      var hideMenu = function(){
+                    $buttonShowMenu.classList.add('is-active');
+                    $buttonHideMenu.classList.remove('is-active');
+                    $menu.classList.remove('is-active');
+                };
+
+                $buttonShowMenu.addEventListener("click", showMenu);
+
+                $buttonHideMenu.addEventListener("click", hideMenu);
+
+               // body.on('panright', showMenu);
+                //body.on('panleft', hideMenu);
+    }
+  });
+  </script>
+</body>
+</html>
