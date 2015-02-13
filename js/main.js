@@ -25,6 +25,7 @@ $(document).ready(function (){
     });
   });
   $(function(){
+    $(".rslides").responsiveSlides();
     if (window.matchMedia("(max-width:768px)").matches){
       var $buttonShowMenu = document.getElementById('showMenu');
       var $buttonHideMenu = document.getElementById('hideMenu');
