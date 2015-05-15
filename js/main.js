@@ -23,6 +23,13 @@ $(document).ready(function (){
     }, function() {
       $("#txt-gt").hide('fast');
     });
+    //Menu
+    $(".MainMenu-link").on("click", function (e){
+      e.preventDefault();
+      $("body, html").animate({ 
+            scrollTop: $( $(this).attr('href') ).offset().top 
+        }, 600);
+    });
   });
   $(function(){
     $(".rslides").responsiveSlides();
