@@ -1,0 +1,18 @@
+.navigation{
+  border:none;
+  border-radius: 0px !important;
+  background: $black;
+  a{
+    color: $white !important;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: $standard){
+  .navigation{
+    background: $white;
+    a{
+      color: $color-default !important;
+    }
+  }
+}

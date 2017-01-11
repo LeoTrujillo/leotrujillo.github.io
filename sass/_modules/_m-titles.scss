@@ -1,0 +1,44 @@
+.m-title--section{
+  color:$black;
+  font-size: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: $font-cabin;
+  position: relative;
+  max-width: 290px;
+  margin: auto;
+  padding: 20px 0px;
+  &::before{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: $blue;
+    position: absolute;
+    bottom: 0;
+    left:35%;
+  }
+}
+
+
+.m-subtitle--section{
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.m-title--left{
+  color: $black;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  &::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: $blue;
+    position: absolute;
+    bottom: 0;
+  }
+}

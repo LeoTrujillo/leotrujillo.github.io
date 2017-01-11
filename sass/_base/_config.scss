@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+$font-default : 'Open Sans', sans-serif;
+$font-cabin : 'Cabin', sans-serif;
+$blue : #00a5f9;
+$button-hover:rgb(40, 96, 144);
+$border-color : rgb(46, 109, 164);
+$black : #454545;
+$color-default : #313131;
+$white : #fff;
+$border-section : #eaebec;
+$background-gray : #F7F8FA;
+$border-item : #eaeaea;
+
+//sizes
+$standard : 960px;
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $font-default;
+  color: $color-default;
+  font-size:16px;
+}
+
+h1{
+  font-size:60px;
+  font-family: $font-cabin;
+  text-transform: capitalize;
+}
+
+h5{
+  font-size: 20px;
+  line-height: 3;
+}
+
+p{
+  line-height: 2;
+}
+
+ul{
+  padding-left: 20px;
+  margin-top: 40px;
+  li{
+    padding: 5px 0px;
+  }
+}
