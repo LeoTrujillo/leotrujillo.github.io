@@ -1,0 +1,347 @@
+.m-banner {
+    min-height: 100vh;
+    background: transparent;
+    margin-top: -20px;
+    color: $white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    &:before{
+      content:"";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+    .container{
+      margin-bottom: 40px;
+    }
+    img{
+      border-radius:50%;
+      max-width: 50%;
+      @media screen and (min-width:760px){
+        max-width: 200px;
+      }
+    }
+}
+
+
+.m-logos{
+  padding: 20px 0px;
+  background: $white;
+  img{
+    display: block;
+    margin: auto;
+    opacity: 0.6;
+    filter: grayscale(1);
+    &:hover{
+      opacity: 1;
+      filter: inital;
+    }
+  }
+}
+
+
+.m-section{
+  border-bottom:1px solid $border-section;
+}
+
+
+.m-services{
+  background: $background-gray;
+  padding: 50px 0px;
+  &__items{
+    margin-top: 50px;
+  }
+  &__item{
+    background: $white;
+    padding: 40px 20px;
+    border-radius:3px;
+    border-left:1px solid $border-item;
+    border-right:1px solid $border-item;
+    border-top:1px solid $border-item;
+    border-bottom:4px solid $border-item;
+    transition: all 1s ease;
+    text-align: center;
+    font-weight: 100;
+    cursor: default;
+    margin-bottom: 20px;
+    .fa{
+      color:$blue;
+      font-size: 40px;
+    }
+    h3{
+      color: $blue;
+    }
+    p{
+      line-height: 2;
+    }
+    &:hover{
+      border-bottom: 4px solid $blue;
+    }
+  }
+}
+
+
+.m-about{
+  padding: 50px 0px;
+  font-weight: 100;
+  img{
+    display: block;
+    margin: auto;
+    width: 510px;
+  }
+}
+
+
+.m-team{
+  padding: 50px 0px;
+  &__people{
+    margin-top: 50px;
+  }
+  &__content{
+    height:260px;
+    width: 260px;
+    margin: 0px auto 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+    border-bottom:4px solid $border-item;
+    img{
+      display: block;
+      margin: auto;
+    }
+    &:hover{
+      border-bottom: 4px solid $blue;
+    }
+    &:hover > .overlay{
+      bottom:0%;
+    }
+    .overlay{
+      position: absolute;
+      bottom:100%;
+      background: rgba(0,0,0, .5);
+      color: $white;
+      width: 260px;
+      height:100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all .2s ease;
+      span{
+        line-height: 2;
+      }
+    }
+  }
+}
+
+.m-testimonial{
+  padding: 50px 0px;
+  &__people{
+    margin: 80px auto 0px;
+  }
+  &__content{
+    border-top:1px solid $border-item;
+    border-left:1px solid $border-item;
+    border-right:1px solid $border-item;
+    border-bottom:4px solid $border-item;
+    border-radius:3px;
+    text-align: center;
+    position: relative;
+    font-weight: 100;
+    padding: 40px 25px;
+    max-width: 350px;
+    margin:0px auto 70px;
+    &:hover{
+      border-bottom: 4px solid $blue;
+    }
+    span{
+      display: block;
+      line-height: 1.5;
+    }
+    .name{
+      color:$blue;
+      font-weight: 400;
+    }
+    .testimonial{
+      font-style: italic;
+      margin-top: 30px;
+    }
+  }
+  &__image{
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 3px $white,
+                0px 0px 0px 4px $blue;
+    position: absolute;
+    top:-40px;
+    left: 40%;
+  }
+}
+
+.m-parallax{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: transparent;
+  position: relative;
+  color:$white;
+  text-align: center;
+  &:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+  }
+  &__button{
+    margin-top: 60px;
+  }
+  h2{
+    font-weight: 600;
+    width: 100%;
+    margin: auto;
+    line-height: 1.5;
+  }
+}
+
+
+.m-blog{
+  padding: 50px 0px;
+  font-weight: 100;
+  &__content{
+    overflow-y: scroll;
+    height: 500px;
+  }
+}
+
+.m-post{
+  margin-bottom: 30px;
+  a{
+    color:$blue;
+  }
+  &__image{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__datemin{
+    text-align: center;
+  }
+  &__title{
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    line-height: 2.5;
+    margin-bottom: 10px;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background: $blue;
+      left: 0;
+      bottom:0;
+    }
+  }
+  &__date{
+   font-style: italic;
+   margin-bottom: 10px;
+  }
+}
+
+.m-footer{
+  padding:50px 0px;
+  text-align: center;
+  a{
+    text-decoration: none;
+  }
+  span{
+    display: block;
+    font-weight: 600;
+    color: $blue;
+    padding: 20px 0px 50px;
+  }
+  .fa{
+    color: $blue;
+    font-size: 40px;
+  }
+  .m-map{
+    iframe{
+      width: 100%;
+      height: 400px;
+    }
+  }
+  &__social{
+    margin-top: 40px;
+    .title{
+      color: $black;
+      margin-bottom: 20px;
+    }
+    .fa{
+      color:rgba(49, 49, 49, 0.5);
+      font-size: 20px;
+      padding: 0px 10px;
+      &:hover{
+        color: #333;
+      }
+    }
+  }
+  &__company{
+    border-top: 1px solid $border-item;
+    margin-top: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: $standard){
+  .m-post{
+    .col-sm-3{
+      &::before{
+        content:"";
+        position: absolute;
+        background: $border-item;
+        height: 320px;
+        width: 2px;
+        left: 50%;
+        z-index: -1;
+      }
+    }
+    &:last-child{
+      .col-sm-3{
+        &::before{
+          content:"";
+          position: absolute;
+          background: $border-item;
+          height: 0px;
+          width: 2px;
+          left: 50%;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  .m-parallax{
+    min-height: 50vh;
+    h2{
+      width: 60%;
+    }
+  }
+}

@@ -1,169 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, maximum-scale=1">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <title>Leonardo Trujillo</title>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40198061-3', 'auto');
-  ga('send', 'pageview');
-
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio | Leonardo Trujillo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header class="encabezado" id="yo">
-    <button class="Header-button is-active fa fa-bars " id="showMenu"></button>
-    <button class="Header-button fa fa-arrow-left" id="hideMenu"></button>
-    <nav class="MainMenu" id="menu">
-      <ul class="MainMenu-list">
-        <li class="MainMenu-item">
-          <a href="#yo" class="MainMenu-link">
-            <i class="fa fa-user"></i>
-            Yo
-          </a>
-        </li>
-        <li class="MainMenu-item">
-          <a href="#perfil" class="MainMenu-link">
-          <i class="fa fa-child"></i>
-            Perfil
-          </a>
-        </li>
-        <li class="MainMenu-item">
-          <a href="#trabajo" class="MainMenu-link">
-          <i class="fa fa-file-code-o"></i>
-            Trabajo
-          </a>
-        </li>
-        <li class="MainMenu-item">
-          <a href="#contacto" class="MainMenu-link">
-            <i class="fa fa-list-alt"></i>
-            Contacto
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <figure class="Header-imageContainer">
-     <img src="images/avatar.jpg" alt="Leonardo Trujillo" class="Header-image" width="200">
-    </figure>
-    <figcaption class="Header-imageDescription">
-      <a class="Header-link" href="https://twitter.com/leotrry" target="_blank">Leonardo Trujillo</a>
-    </figcaption>
-    <p class="redes">
-      <a href="https://facebook.com/ltujillo" target="_blank" class="ff">
-        <i class="fa fa-facebook"></i>
-        <span id="txt-f" class="txt">
-          Facebook
-        </span>
-      </a>
-      <a href="#" href="https://twitter.com/letrry" target="_blank" class="ft">
-        <i class="fa fa-twitter"></i>
-        <span id="txt-t" class="txt">
-          Twitter
-        </span>
-      </a>
-      <a href="https://plus.google.com/u/0/+LeonardoTrujilloldtrujillor/about" target="_blank" class="fg">
-        <i class="fa fa-google-plus"></i>
-        <span id="txt-g" class="txt">
-          Google +
-        </span>
-      </a>
-      <a href="https://github.com/LeoTrujillo" target="_blank" class="fgt">
-        <i class="fa fa-github-alt"></i>
-        <span id="txt-gt" class="txt">
-          Github
-        </span>
-      </a>
-    </p>
-  </header>
-  <section class="Profile" id="perfil">
-    <div class="u-containerDefault bubble">
-      <h2>
-        Mi perfil
-      </h2>
-      <p class="Profile-description">
-        ¡Hola!, soy Leo
-        Co-founder y frontend de Ideátics, Soy ingeníero en sistemas computacionales pero mi verdadera pasión es el desarrollo, mis herramientas
-        son: Html5, Css3, Javascript y he trabajado también con Wordpress, hago trabajos como freelance y me 
-        especializo en la interfaz del usuario y en la interactividad que éste pueda tener en el sitio.
-      </p>
-      <p class="Profile-description">
-        Me gusta seguir aprendiendo y mejorar mis tecnicas ninja de desarrollo, seguir siendo profesional, investigando
-        y leyendo compartiendo con las personas que son apasionadas en este mundo de la tecnologia y el desarrollo.
-      </p>
-      <p class="Profile-description">
-        He trabajado para varias empresas desarrollando sus sitios y algunas aplicaciones internas como sistemas de control
-        de empleados, sistema de comunicacion entre departamentos, tambi&eacute;n desaroll&eacute; una aplicaci&oacute;n para presentar examenes
-        de personalidad y mostr&aacute;ra las estadisticas.
-      </p>
-      <p class="Profile-description">
-        Actualmente colaboro con <a class="Link" target="_blank" href="http://agilekitchen.io">Agile Kitchen</a> como frontend.
-      </p>
-    </div><br>
-    <span class="triangle"></span>
-    <figure class="Header-imageContainer">
-      <img class="img-responsive" src="images/workstation.gif" alt="workstation" width="600">
-    </figure>
-  </section>
-  <section class="Slider work" id="trabajo">
-    <div class="u-containerDefault">
-      <h2 class="u-title bubble-work">Mi trabajo</h2>
-      <span class="triangle-work"></span>
-     <div class="gameboy">
-        <ul class="rslides">
-          <li>
-            <img src="images/cpa.png" alt="Cpa del golfo" class="img-responsive">
-          </li>
-          <li>
-            <img src="images/ideatics.png" alt="Ideatics" class="img-responsive">
-          </li>
-          <li>
-            <img src="images/factax.png" alt="Fac Tax Services" class="img-responsive">
-          </li>
-        </ul>
-          <img src="images/gameboy.png" alt="Gameboy" class="img-responsive">
-        </div>
+  <nav class="navbar navbar-default navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">Parallax</a>
     </div>
-  </section>
-  <footer id="contacto" class="contact">
-  <div class="u-containerDefault">
-    <div class="bubble-contact">
-      <h2>
-        Contactame...¡Estoy listo para tu proyecto!
-      </h2>
-      <div class="contact-link">
-        <a href="mailto:leonardotrujillor@gmail.com" class="shake"><i class="fa fa-envelope"></i></a>
-        <a href="https://facebook.com/ltujillo" target="_blank" class="shake"><i class="fa fa-facebook-square"></i></a>
-        <a href="https://twitter.com/leotrry" target="_blank" class="shake"><i class="fa fa-twitter-square"></i></a>
-        <a href="https://github.com/LeoTrujillo" target="_blank" class="shake"><i class="fa fa-github-square"></i></a>
-        <a href="https://plus.google.com/u/0/+LeonardoTrujilloldtrujillor/about" target="_blank" class="shake">
-        <i class="fa fa-google-plus-square"></i></a>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul id="links" class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- content page   -->
+<section class="m-banner" data-position-y="-100px" data-parallax="scroll" data-image-src="https://unsplash.it/1333/800?image=529">
+  <div class="container">
+    <img src="https://avatars.io/twitter/leotrujill0" alt="" width="50%">
+  </div>
+  <div class="container">
+    <h1>Leonardo Daniel Trujillo Reyes</h1>
+    <h5>Bienvenido a mi portafolio</h5>
+  </div>
+  <div class="container">
+    <div class="m-banner__button">
+      <a class="m-button--default" href="#">Más de mi</a>
+    </div>
+  </div>
+</section>
+
+<section class="m-logos m-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3"><a href="#"><img class="img-responsive" src="images/logo.png" alt=""></a></div>
+      <div class="col-xs-3"><a href="#"><img class="img-responsive" src="images/logo.png" alt=""></a></div>
+      <div class="col-xs-3"><a href="#"><img class="img-responsive" src="images/logo.png" alt=""></a></div>
+      <div class="col-xs-3"><a href="#"><img class="img-responsive" src="images/logo.png" alt=""></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="m-section m-services">
+  <div class="container">
+    <div class="m-title--section">
+      Flagship features
+    </div>
+    <div class="m-subtitle--section">
+      What makes this parallax theme unique.
+    </div>
+    <div class="row m-services__items">
+      <div class="col-sm-4">
+        <div class="m-services__item">
+          <i class="fa fa-arrows-alt"></i>
+          <h3>Parallax Effect</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea eius vitae accusamus velit inventore quidem natus repellat, recusandae aliquid ipsum expedita, voluptates adipisci. Quaerat modi debitis quis vitae quibusdam!</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="m-services__item">
+          <i class="fa fa-columns"></i>
+          <h3>Single Page Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea eius vitae accusamus velit inventore quidem natus repellat, recusandae aliquid ipsum expedita, voluptates adipisci. Quaerat modi debitis quis vitae quibusdam!</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="m-services__item">
+          <i class="fa fa-bar-chart"></i>
+          <h3>Custom Content Blocks</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea eius vitae accusamus velit inventore quidem natus repellat, recusandae aliquid ipsum expedita, voluptates adipisci. Quaerat modi debitis quis vitae quibusdam!</p>
+        </div>
       </div>
     </div>
-    <br>
-    <span class="triangle-contact"></span>
-  <img src="images/fin.gif" alt="finn y jake" class="img-responsive" style="margin-top:-20px">
-    <p>
-      Si te gusto mi trabajo y quieres trabajar conmigo puedes contactarme en mis redes sociales o por correo. <br>
-      Estoy en Xalapa, Ver
-    </p>
   </div>
-  <div class="by">
-    Portafolio hecho con <i class="fa fa-heart heart"></i> por <a href="#yo">Leonardo Trujillo</a>
+</section>
+
+<section class="m-about m-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 class="m-title--left">About</h2>
+        <p>
+          Use this section to tell a story about your business. Everything you see here is responsive and mobile-friendly - it will look great on smartphones and tablets.
+        </p>
+        <ul class="m-list--default">
+          <li>Use lists if you want to.</li>
+          <li>Use basic HTML.</li>
+          <li>Use different styling and typography.</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <img class="img-responsive" src="https://unsplash.it/1020/680?image=823" width="510" alt="">
+      </div>
+    </div>
   </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/hammer.min.js"></script>
-  <script src="js/responsiveslides.min.js"></script>
-  <script src="js/main.js"></script>
+</section>
+
+<section class="m-team m-section">
+  <div class="container">
+    <div class="m-title--section">
+      Your team
+    </div>
+    <div class="m-subtitle--section">
+      Don't be shy about your team. Prove that you have real people working for you.
+    </div>
+    <div class="row m-team__people">
+      <div class="col-sm-3">
+        <div class="m-team__content">
+          <img class="img-responsive" src="https://unsplash.it/520?image=823" width="260" alt="">
+          <div class="overlay">
+            <span>Leonardo Trujillo</span>
+            <span>Develop</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="m-team__content">
+          <img class="img-responsive" src="https://unsplash.it/520?image=823" width="260" alt="">
+          <div class="overlay">
+            <span>Leonardo Trujillo</span>
+            <span>Develop</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="m-team__content">
+          <img class="img-responsive" src="https://unsplash.it/520?image=823" width="260" alt="">
+          <div class="overlay">
+            <span>Leonardo Trujillo</span>
+            <span>Develop</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="m-team__content">
+          <img class="img-responsive" src="https://unsplash.it/520?image=823" width="260" alt="">
+          <div class="overlay">
+            <span>Leonardo Trujillo</span>
+            <span>Develop</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="m-testimonial m-section">
+  <div class="container">
+    <div class="m-title--section">
+      Client Testimonials
+    </div>
+    <div class="m-subtitle--section">
+      Get testimonials from your clients and display them here. Prove that you're for real.
+    </div>
+    <div class="row m-testimonial__people">
+      <div class="col-sm-4">
+        <div class="m-testimonial__content">
+          <div class="m-testimonial__image">
+            <img class="img-responsive" src="https://unsplash.it/150?image=823" width="75" alt="">
+          </div>
+          <span class="name">Leonardo Trujillo</span>
+          <span class="job">Developer</span>
+          <p class="testimonial">
+            "They helped me become a devoted coffee evangelist, a wannabe web practitioner, a troublemaker, a general TV trailblazer, a problem solver."
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="m-testimonial__content">
+          <div class="m-testimonial__image">
+            <img class="img-responsive" src="https://unsplash.it/150?image=823" width="75" alt="">
+          </div>
+          <span class="name">Leonardo Trujillo</span>
+          <span class="job">Developer</span>
+          <p class="testimonial">
+            "They helped me become a devoted coffee evangelist, a wannabe web practitioner, a troublemaker, a general TV trailblazer, a problem solver."
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="m-testimonial__content">
+          <div class="m-testimonial__image">
+            <img class="img-responsive" src="https://unsplash.it/150?image=823" width="75" alt="">
+          </div>
+          <span class="name">Leonardo Trujillo</span>
+          <span class="job">Developer</span>
+          <p class="testimonial">
+            "They helped me become a devoted coffee evangelist, a wannabe web practitioner, a troublemaker, a general TV trailblazer, a problem solver."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="m-parallax" data-position-y="-100px" data-parallax="scroll" data-image-src="https://unsplash.it/1333/800?image=1011">
+  <div class="container">
+    <h2>
+      Check out this cool parallax scrolling effect. Use these ribbons to display calls to action mid-page.
+    </h2>
+    <div class="m-parallax__button">
+      <a class="m-button--default" href="#">Button</a>
+    </div>
+  </div>
+</section>
+
+<section class="m-section m-blog">
+  <div class="container">
+    <h2 class="m-title--left">Your latest blog posts</h2>
+    <div class="m-blog__content">
+      <div class="row m-post">
+        <div class="col-sm-1">
+          <div class="m-post__datemin">Aug, 3</div>
+        </div>
+        <div class="col-sm-3">
+          <div class="m-post__image">
+            <img class="img-responsive" src="https://unsplash.it/300?image=1011" width="150" alt="">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="m-post__title">Everything Mobile-Friendly and Responsive</div>
+          <div class="m-post__date"><a href="#">August 3, 2015</a> by <a href="#">Madalin</a></div>
+          <div class="m-post__description">
+            <p>
+              Free and Priceless at the Same Time WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time. — WordPress Lorem Ut in lorem at nisi ultricies semper? Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed […]
+            </p>
+          </div>
+          <a href="#" class="m-post__link">Read more</a>
+        </div>
+      </div>
+      <div class="row m-post">
+        <div class="col-sm-1">
+          <div class="m-post__datemin">Aug, 3</div>
+        </div>
+        <div class="col-sm-3">
+          <div class="m-post__image">
+            <img class="img-responsive" src="https://unsplash.it/300?image=1011" width="150" alt="">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="m-post__title">Everything Mobile-Friendly and Responsive</div>
+          <div class="m-post__date"><a href="#">August 3, 2015</a> by <a href="#">Madalin</a></div>
+          <div class="m-post__description">
+            <p>
+              Free and Priceless at the Same Time WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time. — WordPress Lorem Ut in lorem at nisi ultricies semper? Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed […]
+            </p>
+          </div>
+          <a href="#" class="m-post__link">Read more</a>
+        </div>
+      </div>
+      <div class="row m-post">
+        <div class="col-sm-1">
+          <div class="m-post__datemin">Aug, 3</div>
+        </div>
+        <div class="col-sm-3">
+          <div class="m-post__image">
+            <img class="img-responsive" src="https://unsplash.it/300?image=1011" width="150" alt="">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="m-post__title">Everything Mobile-Friendly and Responsive</div>
+          <div class="m-post__date"><a href="#">August 3, 2015</a> by <a href="#">Madalin</a></div>
+          <div class="m-post__description">
+            <p>
+              Free and Priceless at the Same Time WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time. — WordPress Lorem Ut in lorem at nisi ultricies semper? Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed […]
+            </p>
+          </div>
+          <a href="#" class="m-post__link">Read more</a>
+        </div>
+      </div>
+      <div class="row m-post">
+        <div class="col-sm-1">
+          <div class="m-post__datemin">Aug, 3</div>
+        </div>
+        <div class="col-sm-3">
+          <div class="m-post__image">
+            <img class="img-responsive" src="https://unsplash.it/300?image=1011" width="150" alt="">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="m-post__title">Everything Mobile-Friendly and Responsive</div>
+          <div class="m-post__date"><a href="#">August 3, 2015</a> by <a href="#">Madalin</a></div>
+          <div class="m-post__description">
+            <p>
+              Free and Priceless at the Same Time WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time. — WordPress Lorem Ut in lorem at nisi ultricies semper? Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed […]
+            </p>
+          </div>
+          <a href="#" class="m-post__link">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="m-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <a href="#">
+          <i class="fa fa-envelope-o"></i>
+          <span>Your email</span>
+        </a>
+      </div>
+      <div class="col-xs-4">
+        <a href="#">
+          <i class="fa fa-map-marker"></i>
+          <span>Xalapa, Veracruz</span>
+        </a>
+      </div>
+      <div class="col-xs-4">
+        <a href="#">
+          <i class="fa fa-mobile"></i>
+          <span>000-000-000</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="m-footer__social">
+      <div class="title">Your Company Name and Social Links</div>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+    </div>
+    <div class="m-footer__company">
+      Make by <a href="#">Ideátics</a>
+    </div>
+  </div>
+</footer>
+
+<!-- /content page   -->
+
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/parallax.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+{
+  "name": "leotrujillo.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:LeoTrujillo/leotrujillo.github.io.git",
+    "type": "git"
+  },
+  "author": "Leo <leonardotrujillor@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "sass":"sass sass/main.scss:css/main.css --watch --style compressed"}
+}
